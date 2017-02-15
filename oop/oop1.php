@@ -3,11 +3,11 @@
 class Worker 
 {
 
-	// public $name = 'ВАСЯ';
-	// public $age = 10;
-	// public $salary = 1000;
+	public $name = 'ВАСЯ';
+	public $age = 10;
+	public $salary = 1000;
 
- 	public function get()
+ 	public function __construct()
  	{
  		return $this->name."<br/>".$this->age." років<br/>".$this->salary." $<br/>";
  	}
@@ -21,8 +21,8 @@ class Worker
 
 }
 
-$new_object_Worker = new Worker("ВАСЯ",10,1000);
-$new_object_Worker_2 = new Worker("ІВАН",30,2000);
+// $new_object_Worker = new Worker("ВАСЯ",10,1000);
+// $new_object_Worker_2 = new Worker("ІВАН",30,2000);
 
 echo $new_object_Worker->get() . "<br/>";
 
